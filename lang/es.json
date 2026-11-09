@@ -1,0 +1,37 @@
+{
+  "TOKEN_HEALTH": {
+    "Apply": "Aplicar",
+    "Amount": "Cantidad",
+    "Help": "Enter aplica. Positivo = daño, negativo = curación. Daño con tipo: 5[frío]+10[fuego]. Mayús+Enter con -10 añade 10 PG temporales.",
+    "HelpTitle": "Ayuda de entrada",
+    "toggleKeyName": "Abrir Stef's Token Health",
+    "toggleKeyHint": "Abre el diálogo de daño/curación para los tokens seleccionados. Mantén Alt para usar tus objetivos en su lugar.",
+    "Title": "Stef's Token Health ({count} {scope})",
+    "ScopeSelected": "seleccionados",
+    "ScopeTargets": "objetivos",
+    "Placeholder": {
+      "generic": "10, -10, 5[frío]+10[fuego]",
+      "dnd5e": "10, -10, 5[frío]+10[fuego]",
+      "drawSteel": "10, -10, 5[frío]+10[fuego]"
+    },
+    "HelpBody": {
+      "dnd5e": "Enter aplica. Positivo = daño, negativo = curación. Daño con tipo: 5[frío]+10[fuego]. Mayús+Enter con -10 añade 10 PG temporales.",
+      "drawSteel": "Enter aplica. Positivo = daño, negativo = curación (Aguante). Daño con tipo: 5[frío]+10[fuego] — cada segmento es una instancia de daño independiente, así que la inmunidad y la debilidad se aplican a cada una. Tipos: {types}. Mayús+Enter con -10 fija el Aguante temporal en 10 (gana el valor más alto; curar a un esbirro cura una sola vez el Aguante compartido de su escuadra, hasta el máximo de la escuadra, y revive a los esbirros derrotados que la reserva vuelve a cubrir; los esbirros no pueden ganar Aguante temporal)."
+    },
+    "Warn": {
+      "Prefix": "Stef's Token Health: {message}",
+      "OldModuleActive": "El antiguo módulo Token Health también está activo. Ambos se abren con Enter, así que desactiva Token Health en la gestión de módulos.",
+      "UnsupportedSystem": "No hay ningún adaptador registrado para el sistema de juego \"{system}\".",
+      "TempUnsupported": "Este sistema no admite puntos de golpe temporales.",
+      "TempNeedsNegative": "El modo temporal requiere un número negativo simple (p. ej. -10).",
+      "NoValidTargets": "Ninguno de los tokens seleccionados tiene un recurso de salud."
+    },
+    "Error": {
+      "Empty": "Entrada vacía.",
+      "NegativeTyped": "Las expresiones con tipo no pueden ser negativas. Usa un número negativo simple para curar.",
+      "InvalidExpression": "Expresión no válida.",
+      "InvalidSegment": "Segmento no válido: \"{segment}\".",
+      "UnknownType": "Tipo de daño desconocido: \"{type}\"."
+    }
+  }
+}

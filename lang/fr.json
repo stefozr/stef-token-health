@@ -1,0 +1,37 @@
+{
+  "TOKEN_HEALTH": {
+    "Apply": "Appliquer",
+    "Amount": "Valeur",
+    "Help": "Entrée applique. Positif = dégâts, négatif = soins. Dégâts typés : 5[froid]+10[feu]. Maj+Entrée avec -10 ajoute 10 PV temporaires.",
+    "HelpTitle": "Aide de saisie",
+    "toggleKeyName": "Ouvrir Stef's Token Health",
+    "toggleKeyHint": "Ouvre la fenêtre de dégâts/soins pour les tokens sélectionnés. Maintenez Alt pour utiliser vos cibles à la place.",
+    "Title": "Stef's Token Health ({count} {scope})",
+    "ScopeSelected": "sélectionnés",
+    "ScopeTargets": "cibles",
+    "Placeholder": {
+      "generic": "10, -10, 5[froid]+10[feu]",
+      "dnd5e": "10, -10, 5[froid]+10[feu]",
+      "drawSteel": "10, -10, 5[froid]+10[feu]"
+    },
+    "HelpBody": {
+      "dnd5e": "Entrée applique. Positif = dégâts, négatif = soins. Dégâts typés : 5[froid]+10[feu]. Maj+Entrée avec -10 ajoute 10 PV temporaires.",
+      "drawSteel": "Entrée applique. Positif = dégâts, négatif = soins (Endurance). Dégâts typés : 5[froid]+10[feu] — chaque segment est une instance de dégâts distincte, l'immunité et la faiblesse s'appliquent donc à chacune. Types : {types}. Maj+Entrée avec -10 fixe l'Endurance temporaire à 10 (la valeur la plus élevée l'emporte ; soigner un sbire soigne une seule fois l'Endurance partagée de son escouade, jusqu'au maximum de l'escouade, et ranime les sbires vaincus que la réserve couvre à nouveau ; les sbires ne peuvent pas gagner d'Endurance temporaire)."
+    },
+    "Warn": {
+      "Prefix": "Stef's Token Health : {message}",
+      "OldModuleActive": "L'ancien module Token Health est aussi actif. Les deux s'ouvrent avec Entrée, désactivez donc Token Health dans la gestion des modules.",
+      "UnsupportedSystem": "Aucun adaptateur n'est enregistré pour le système de jeu « {system} ».",
+      "TempUnsupported": "Ce système ne gère pas les points de vie temporaires.",
+      "TempNeedsNegative": "Le mode temporaire nécessite un nombre négatif simple (par ex. -10).",
+      "NoValidTargets": "Aucun des tokens sélectionnés ne possède de ressource de santé."
+    },
+    "Error": {
+      "Empty": "Saisie vide.",
+      "NegativeTyped": "Les expressions typées ne peuvent pas être négatives. Utilisez un nombre négatif simple pour soigner.",
+      "InvalidExpression": "Expression invalide.",
+      "InvalidSegment": "Segment invalide : « {segment} ».",
+      "UnknownType": "Type de dégâts inconnu : « {type} »."
+    }
+  }
+}

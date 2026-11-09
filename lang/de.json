@@ -1,0 +1,37 @@
+{
+  "TOKEN_HEALTH": {
+    "Apply": "Anwenden",
+    "Amount": "Wert",
+    "Help": "Enter führt aus. Positiv = Schaden, negativ = Heilung. Getippter Schaden: 5[kalt]+10[feuer]. Umschalt+Enter mit -10 fügt 10 temporäre TP hinzu.",
+    "HelpTitle": "Eingabehilfe",
+    "toggleKeyName": "Stef's Token Health öffnen",
+    "toggleKeyHint": "Öffnet den Schadens-/Heilungsdialog für die ausgewählten Tokens. Halte Alt gedrückt, um stattdessen deine Ziele zu verwenden.",
+    "Title": "Stef's Token Health ({count} {scope})",
+    "ScopeSelected": "ausgewählt",
+    "ScopeTargets": "Ziele",
+    "Placeholder": {
+      "generic": "10, -10, 5[kalt]+10[feuer]",
+      "dnd5e": "10, -10, 5[kalt]+10[feuer]",
+      "drawSteel": "10, -10, 5[kalt]+10[feuer]"
+    },
+    "HelpBody": {
+      "dnd5e": "Enter führt aus. Positiv = Schaden, negativ = Heilung. Getippter Schaden: 5[kalt]+10[feuer]. Umschalt+Enter mit -10 fügt 10 temporäre TP hinzu.",
+      "drawSteel": "Enter führt aus. Positiv = Schaden, negativ = Heilung (Ausdauer). Getippter Schaden: 5[kalt]+10[feuer] — jedes Segment ist eine eigene Schadensinstanz, Immunität und Schwäche gelten also für jedes einzeln. Typen: {types}. Umschalt+Enter mit -10 setzt die temporäre Ausdauer auf 10 (der höhere Wert gilt; das Heilen eines Schergen heilt die gemeinsame Ausdauer seiner Gruppe einmal, bis zum Maximum der Gruppe, und belebt besiegte Schergen wieder, die der Vorrat abdeckt; Schergen können keine temporäre Ausdauer erhalten)."
+    },
+    "Warn": {
+      "Prefix": "Stef's Token Health: {message}",
+      "OldModuleActive": "Das alte Modul Token Health ist ebenfalls aktiv. Beide öffnen sich mit Enter, deaktiviere daher Token Health in der Modulverwaltung.",
+      "UnsupportedSystem": "Für das Spielsystem \"{system}\" ist kein Adapter registriert.",
+      "TempUnsupported": "Dieses System unterstützt keine temporären Trefferpunkte.",
+      "TempNeedsNegative": "Der Temp-Modus erfordert eine einfache negative Zahl (z. B. -10).",
+      "NoValidTargets": "Keiner der ausgewählten Tokens besitzt eine Lebensressource."
+    },
+    "Error": {
+      "Empty": "Leere Eingabe.",
+      "NegativeTyped": "Getippte Ausdrücke dürfen nicht negativ sein. Verwende für Heilung eine einfache negative Zahl.",
+      "InvalidExpression": "Ungültiger Ausdruck.",
+      "InvalidSegment": "Ungültiges Segment: \"{segment}\".",
+      "UnknownType": "Unbekannter Schadenstyp: \"{type}\"."
+    }
+  }
+}

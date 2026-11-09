@@ -1,0 +1,37 @@
+<form class="token-health" autocomplete="off">
+  {{#if thumbnails.length}}
+    <div class="th-grid" aria-label="Selected tokens">
+      {{#each thumbnails}}
+        <img src="{{this.image}}" title="{{this.name}}" />
+      {{/each}}
+    </div>
+  {{/if}}
+
+  <div class="form-group">
+    <div class="th-label-row">
+      <label for="token-health-amount">{{localize "TOKEN_HEALTH.Amount"}}</label>
+
+      <button
+        type="button"
+        class="th-help-btn"
+        aria-label="{{localize "TOKEN_HEALTH.HelpTitle"}}"
+        aria-expanded="false"
+      >
+        <i class="fas fa-circle-question"></i>
+      </button>
+
+      <div class="th-tooltip" hidden>
+        {{help}}
+      </div>
+    </div>
+
+    <input
+      id="token-health-amount"
+      type="text"
+      name="amount"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder="{{placeholder}}"
+    />
+  </div>
+</form>

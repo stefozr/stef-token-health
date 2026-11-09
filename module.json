@@ -1,0 +1,71 @@
+{
+  "id": "stef-token-health",
+  "title": "Stef's Token Health",
+  "description": "A quick damage and healing dialog for selected or targeted tokens: positive numbers damage, negative numbers heal, typed damage like 5[fire]+3[cold], Shift+Enter for temporary hit points or Stamina. Supports D&D 5e and Draw Steel, including minion squads. Stef's Token Health is not affiliated with MCDM Productions, LLC. Draw Steel is a trademark of MCDM Productions, LLC.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Stefan",
+      "url": "https://github.com/stefozr"
+    }
+  ],
+  "url": "https://github.com/stefozr/stef-token-health",
+  "manifest": "https://github.com/stefozr/stef-token-health/releases/latest/download/module.json",
+  "download": "https://github.com/stefozr/stef-token-health/releases/download/v1.0.0/module.zip",
+  "bugs": "https://github.com/stefozr/stef-token-health/issues",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14.369"
+  },
+  "scripts": [],
+  "esmodules": [
+    "module/token-health.js"
+  ],
+  "styles": [
+    "styles/token-health.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "draw-steel",
+        "type": "system",
+        "reason": "Applies damage and healing to Stamina, including minion squads."
+      },
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "reason": "Applies damage, healing and temp HP to hit points."
+      }
+    ]
+  }
+}

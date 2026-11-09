@@ -1,0 +1,37 @@
+{
+  "TOKEN_HEALTH": {
+    "Apply": "適用",
+    "Amount": "数値",
+    "Help": "Enterで適用。正=ダメージ、負=回復。属性: 5[cold]+10[fire]。Shift+Enterで-10は一時HP+10。",
+    "HelpTitle": "入力ヘルプ",
+    "toggleKeyName": "Stef's Token Health を開く",
+    "toggleKeyHint": "選択したトークンにダメージ/回復を適用するダイアログを開きます。Altを押しながらでターゲットを対象にします。",
+    "Title": "Stef's Token Health ({count} {scope})",
+    "ScopeSelected": "選択中",
+    "ScopeTargets": "ターゲット",
+    "Placeholder": {
+      "generic": "10, -10, 5[cold]+10[fire]",
+      "dnd5e": "10, -10, 5[cold]+10[fire]",
+      "drawSteel": "10, -10, 5[cold]+10[fire]"
+    },
+    "HelpBody": {
+      "dnd5e": "Enterで適用。正=ダメージ、負=回復。属性: 5[cold]+10[fire]。Shift+Enterで-10は一時HP+10。",
+      "drawSteel": "Enterで適用。正=ダメージ、負=回復（スタミナ）。属性ダメージ: 5[cold]+10[fire] — 各セグメントは個別のダメージとして扱われるため、耐性と弱点はそれぞれに適用されます。属性: {types}。Shift+Enterで-10は一時スタミナを10に設定します（高い方が優先。ミニオンを回復すると、所属するスクワッドの共有スタミナが1回だけ（スクワッドの最大値まで）回復し、その分で賄える倒されたミニオンが復活します。ミニオンは一時スタミナを獲得できません）。"
+    },
+    "Warn": {
+      "Prefix": "Stef's Token Health: {message}",
+      "OldModuleActive": "古い Token Health モジュールも有効になっています。どちらも Enter で開くため、モジュール管理で Token Health を無効にしてください。",
+      "UnsupportedSystem": "ゲームシステム「{system}」に対応するアダプターが登録されていません。",
+      "TempUnsupported": "このシステムは一時ヒットポイントに対応していません。",
+      "TempNeedsNegative": "一時モードには単純な負の数（例: -10）が必要です。",
+      "NoValidTargets": "選択したトークンにヒットポイント系のリソースがありません。"
+    },
+    "Error": {
+      "Empty": "入力が空です。",
+      "NegativeTyped": "属性付きの式は負にできません。回復には単純な負の数を使用してください。",
+      "InvalidExpression": "無効な式です。",
+      "InvalidSegment": "無効なセグメント: 「{segment}」。",
+      "UnknownType": "不明なダメージタイプ: 「{type}」。"
+    }
+  }
+}

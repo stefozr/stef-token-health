@@ -1,0 +1,37 @@
+{
+  "TOKEN_HEALTH": {
+    "Apply": "Apply",
+    "Amount": "Amount",
+    "Help": "Enter applies. Positive = damage, negative = healing. Typed damage: 5[cold]+10[fire]. Shift+Enter with -10 adds 10 Temp HP.",
+    "HelpTitle": "Input help",
+    "toggleKeyName": "Open Stef's Token Health",
+    "toggleKeyHint": "Opens the damage/healing dialog for the selected tokens. Hold Alt to use your targets instead.",
+    "Title": "Stef's Token Health ({count} {scope})",
+    "ScopeSelected": "selected",
+    "ScopeTargets": "targets",
+    "Placeholder": {
+      "generic": "10, -10, 5[cold]+10[fire]",
+      "dnd5e": "10, -10, 5[cold]+10[fire]",
+      "drawSteel": "10, -10, 5[cold]+10[fire]"
+    },
+    "HelpBody": {
+      "dnd5e": "Enter applies. Positive = damage, negative = healing. Typed damage: 5[cold]+10[fire]. Shift+Enter with -10 adds 10 Temp HP.",
+      "drawSteel": "Enter applies. Positive = damage, negative = healing (Stamina). Typed damage: 5[cold]+10[fire] — each segment is a separate damage instance, so immunity and weakness apply to each. Types: {types}. Shift+Enter with -10 sets Temporary Stamina to 10 (highest wins; healing a minion heals its squad's shared Stamina once, up to the squad's max, and revives defeated minions the pool covers again; minions cannot gain Temporary Stamina)."
+    },
+    "Warn": {
+      "Prefix": "Stef's Token Health: {message}",
+      "OldModuleActive": "The old Token Health module is also active. Both open on Enter, so disable Token Health in Module Management.",
+      "UnsupportedSystem": "No adapter is registered for the \"{system}\" game system.",
+      "TempUnsupported": "This system does not support temporary hit points.",
+      "TempNeedsNegative": "Temp mode requires a plain negative number (e.g. -10).",
+      "NoValidTargets": "None of the selected tokens have a health resource."
+    },
+    "Error": {
+      "Empty": "Empty input.",
+      "NegativeTyped": "Typed expressions cannot be negative. Use a plain negative number for healing.",
+      "InvalidExpression": "Invalid expression.",
+      "InvalidSegment": "Invalid segment: \"{segment}\".",
+      "UnknownType": "Unknown damage type: \"{type}\"."
+    }
+  }
+}
